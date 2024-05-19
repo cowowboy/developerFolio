@@ -1,0 +1,23 @@
+{
+    "Skills": "技能",
+    "Work Experiences" : "工作經驗",
+    "Resume": "履歷",
+    "Contact Me": "聯繫我",    
+    "greeting":[{
+        "username": "林渥鈐",
+        "title": "你好，我是渥鈐",
+        "subTitle": "專注於全端工程師的工作🚀 致力開發Web應用使用 JavaScript / Reactjs / Nodejs 並熟悉機器學習, 安卓WiFi韌體和網路工程",
+        "resumeLink": "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+        "displayGreeting": true 
+    }],
+    "skillsSection":[{
+        "title": "What I do",
+        "subTitle": "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+        "display": true
+    }],
+    "Des0" : "⚡ 開發高使用者體驗前端Web/Mobile APP",
+    "Des1" : "⚡ 熟悉SPA/SSR後端技術",
+    "Des2" : "⚡ AWS / Firebase / Digital Ocean 第三方服務整合",
+    "contactDesc" : "技術討論或者想打聲招呼! 請聯繫我 !",
+    "constactTitle" : "聯繫我 ☎️"
+}

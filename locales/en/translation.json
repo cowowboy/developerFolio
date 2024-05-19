@@ -1,0 +1,23 @@
+{
+    "Skills": "Skills",
+    "Work Experiences" : "Work Experiences",
+    "Resume": "Resume",
+    "Contact Me": "Contact Me",
+    "greeting":[{
+        "username": "Morty Lin",
+        "title": "Hi all, I'm Lin",
+        "subTitle": "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and Machine Learning,  WiFi firmware and network engineering.",
+        "resumeLink": "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+        "displayGreeting": true 
+    }],
+    "skillsSection":[{
+        "title": "What I do",
+        "subTitle": "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+        "display": true
+    }],
+    "Des0" : "⚡ Develop highly user-friendly Front end / User Interfaces for your web and mobile applications",
+    "Des1" : "⚡ Familiar with SPA/ SSR backend stacks",
+    "Des2" : "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+    "contactDesc" : "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "constactTitle" : "Contact Me ☎️"
+}
