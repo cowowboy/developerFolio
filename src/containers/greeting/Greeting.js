@@ -8,10 +8,15 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
+import Typical from 'react-typical';
 
 export default function Greeting() {
+  const { t } = useTranslation();
+  const greeting = t("greeting",{ returnObjects: true })
+
   const {isDark} = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
+  if (!greeting[0].displayGreeting) {
     return null;
   }
   return (
@@ -24,8 +29,11 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                <Typical steps={[
+                  greeting[0].title + "👋"
+                ]}></Typical>
+            
+                {/* <span className="wave-emoji">{emoji("👋")}</span> */}
               </h1>
               <p
                 className={
@@ -34,12 +42,12 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                {greeting[0].subTitle}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
+                {greeting[0].resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"

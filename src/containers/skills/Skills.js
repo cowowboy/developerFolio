@@ -6,8 +6,17 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
+import emoji from "react-easy-emoji";
 
 export default function Skills() {
+  const { t } = useTranslation();
+  const skillTranslation = t("skillsSection",{ returnObjects: true })
+  skillsSection.subTitle = skillTranslation[0].subTitle
+  skillsSection.title = skillTranslation[0].title
+  // const Des1 = emoji(t("Des1"))
+
+  // console.log(skillsSection.skills)
   const {isDark} = useContext(StyleContext);
   if (!skillsSection.display) {
     return null;
@@ -55,7 +64,7 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                    {t('Des' + `${i}`)}
                   </p>
                 );
               })}

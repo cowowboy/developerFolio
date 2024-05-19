@@ -21,6 +21,7 @@
 
 .software-skill-inline > i:hover {
   color: $skillsColor;
+  transform: scale(1.8) !important;
 }
 .software-skill-inline > p {
   color: $subTitle;
@@ -28,4 +29,5 @@
 }
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
+  transform: scale(2.0) !important;
 }

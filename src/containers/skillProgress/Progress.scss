@@ -1,6 +1,8 @@
 @import "../../_globalColor";
 
 .meter {
+  width: 100%;
+  overflow: hidden;
   height: 20px;
   position: relative;
   background: $progressBarBackground;
@@ -18,6 +20,8 @@
   background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
+  transition: width 4s ease-in-out; /* Animation for width change */
+  width: 0%; /* Initial width */
 }
 .skill {
   line-height: 3.5vw;
@@ -28,7 +32,8 @@
 }
 .skills-container {
   display: flex;
-  width: 90%;
+  // width: 90%;
+  width: 60%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
